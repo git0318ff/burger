@@ -1,3 +1,17 @@
-.menu__item-link{
-    text-transform: uppercase;
-}
+//config
+@import "config/_mixins.scss";
+@import "config/_variables.scss";
+
+//layout
+@import "layout/fonts.scss";
+@import "layout/base.scss";
+
+@import 'blocks/intro.scss';
+@import 'blocks/header.scss';
+@import 'blocks/nav.scss';
+
+@import 'blocks/best.scss';
+@import 'blocks/reviews.scss';
+
+
+@import 'blocks/points.scss';
