@@ -1,0 +1,14 @@
+//config
+
+@import "config/_variables.scss";
+@import "config/_mixins.scss";
+
+// base
+@import "layout/_fonts.scss";
+@import "layout/_base.scss";
+@import "layout/_adjustment.scss";
+
+// blocks
+// @import "blocks/home.scss";
+@import "blocks/header.scss";
+// @import "blocks/_best.scss";
