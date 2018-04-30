@@ -1,0 +1,46 @@
+.features {
+  background-image: url('../img/features-screen/bg.jpg');
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+  .screen-title {
+    margin-bottom: rem(50px);
+  }
+
+  .features__list {
+    display: flex;
+  }
+
+  .features__item {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin: 0 rem(15px);
+    margin-bottom: rem(35px);
+  }
+
+  .features__img {
+    margin-bottom: rem(25px);
+  }
+
+  .features__icon {
+    width: rem(97px);
+    height: rem(89px);
+  }
+
+  .features__title {
+    font-size: rem(24px);
+    font-family: "lifehack";
+    margin-bottom: rem(15px);
+  }
+
+.features__text {
+    font-size: rem(14px);
+    font-weight: 300;
+    line-height: 1.8;
+  }
