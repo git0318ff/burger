@@ -1,0 +1,97 @@
+.home {
+  background-image: url('../img/reviews-screen/bg.jpg');
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: cover;
+  position: relative;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+}
+
+.header__logo {
+  margin-right: auto;
+}
+// антипаттерн
+.menu {
+    margin-right: rem(15px);
+    &__list {
+      margin: 0;
+      padding: 0;
+    }
+  }
+  
+  .menu__item {
+    display: inline-block;
+    vertical-align: middle;
+    white-space: nowrap;
+    &:after {
+      display: inline-block;
+      vertical-align: middle;
+      content: ' ';
+      @include circle(rem(5px), $white);
+      margin: 0 rem(12px);
+    }
+    &:last-child:after {
+      display: none;
+    }
+  }
+  
+  .menu__link {
+    font-size: rem(13px);
+    font-weight: 400;
+    line-height: 1.42;
+    text-transform: uppercase;
+    display: inline-block;
+    vertical-align: middle;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+// .home__container {
+//   height: 100%;
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+//   align-items: center;
+// }
+
+.home__content {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  align-items: center;
+  padding-bottom: 15%;
+}
+
+.content__img, .content__description {
+  flex-basis: 50%;
+  display: flex;
+}
+
+.content__description {
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+%test {
+  color: white;
+}
+
+.content__description-text {
+  color: #ffffff;
+  font-family: 'Lifehack';
+  font-size: rem(65px);
+  font-weight: 400;
+  line-height: 1;
+  @extend %test;
+}
+
