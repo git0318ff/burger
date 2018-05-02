@@ -1,7 +1,7 @@
-.best {
+.features {
   background-image: url("../img/features-screen/bg.jpg");
   background-repeat: no-repeat;
-  background-position: center bottom;
+  background-position: center center;
   background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -13,7 +13,51 @@
   -ms-flex-align: center;
   align-items: center; }
 
-.section__title--best {
-  color: #2f3234;
-  padding: 0;
-  margin-bottom: rem(60px); }
+.screen-title {
+  margin-bottom: rem(50px); }
+
+.features__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.features__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  margin: 0 rem(15px);
+  padding-top: 15px;
+  margin-bottom: rem(35px); }
+
+.features__img {
+  margin-bottom: rem(25px); }
+
+.features__icon {
+  width: rem(97px);
+  height: rem(89px); }
+
+.features__title {
+  display: inline-block;
+  text-align: center;
+  font-family: "lifehack";
+  font-weight: 500;
+  font-size: rem(24px);
+  line-height: 1.25;
+  margin-bottom: rem(15px); }
+
+.features__text {
+  display: inline-block;
+  text-align: center;
+  font-size: rem(14px);
+  font-weight: 300;
+  line-height: 1.8; }
