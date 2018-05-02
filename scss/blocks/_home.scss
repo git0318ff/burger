@@ -8,34 +8,41 @@
 
 .header {
   width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  // display: flex;
+  // justify-content: space-between;
+  // align-items: center;
   padding-top: 10px;
 }
-
+.header__container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
 .header__logo {
   margin-right: auto;
 }
 // антипаттерн
+.header__menu{
+  display: flex;
+  flex-wrap: nowrap;
+  
+}
 .menu {
     margin-right: rem(15px);
-    &__list {
-      margin: 0;
-      padding: 0;
-    }
   }
-  
+.menu__list{
+  margin: 0;
+  padding: 0;
+  display:flex;
+}  
   .menu__item {
-    display: inline-block;
-    vertical-align: middle;
-    white-space: nowrap;
-    font-size: rem(13px);
-    font-weight: 500;    
-    text-transform: uppercase;
+    position: relative;
+    display: flex;
+    align-items: center;
+
     &:after {
-      display: inline-block;
-      vertical-align: middle;
       content: ' ';
       @include circle(rem(4px), $white);
       margin: 0 rem(16px);
@@ -45,21 +52,25 @@
     }
   }
   
-  .menu__link {
+  .menu__item-link {
     display: inline-block;
-    vertical-align: middle;
+    padding: 3px 0;
+
+    white-space: nowrap;
+    font-size: rem(13px);
+    font-weight: 500;    
+    text-transform: uppercase; 
+
     &:hover {
       text-decoration: underline;
     }
   }
 
-// .home__container {
-//   height: 100%;
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: center;
-//   align-items: center;
-// }
+  .header__btn{
+    
+display: flex;
+justify-content: flex-end;
+  }
 
 .home__content {
   width: 100%;
@@ -67,13 +78,15 @@
   flex-wrap: wrap;
   flex-grow: 1;
   align-items: center;
-  padding-bottom: 15%;
+  padding-bottom: 5%;
 }
 
 .content__img, .content__description {
-  flex-basis: 50%;
+  // flex-basis: 50%;
+  width: 50%;
   display: flex;
 }
+
 
 .content__description {
   flex-direction: column;
@@ -90,3 +103,19 @@
   // @extend %test;
 }
 
+.next-page-link {
+  width: rem(50px);
+  height: rem(50px);
+  border: none; 
+  background: url("../img/icons/arrow-scroll.svg") center center no-repeat;
+  
+  cursor: pointer;
+  transition: .5s; 
+  display: inline-block;
+
+  &:hover {
+    // background-color: $orange-dark;
+    background-color: darken($orange, 7%);
+
+}
+}

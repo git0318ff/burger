@@ -37,20 +37,22 @@
 
 .order-link {
   min-width: rem(98px);
-  padding: rem(10px) rem(17px);
+  padding: rem(10px) rem(16px);
   border-radius: 5px;
   background-color: $orange;
   color: $white;
-  text-decoration: none;
+
   font-size: rem(13px);
   font-family: 'ubuntu', Arial, Helvetica, sans-serif;
   font-weight: 500;
-  // line-height: 1.42;
   text-transform: uppercase;
+  
   transition: .5s;
   display: inline-block;
+
   &:hover {
-    background-color: $orange-dark;
+    // background-color: $orange-dark;
+    background-color: darken($orange, 7%);
   }
 }
 

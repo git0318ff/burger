@@ -3,6 +3,7 @@
   background-repeat: no-repeat;
   background-position: center bottom;
   background-size: cover;
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -19,6 +20,7 @@
   .features__item {
     display: flex;
     flex-direction: column;
+    align-items: center;
     flex: 1;
     margin: 0 rem(15px);
     margin-bottom: rem(35px);
@@ -37,6 +39,7 @@
     font-size: rem(24px);
     font-family: "lifehack";
     margin-bottom: rem(15px);
+   
   }
 
 .features__text {
