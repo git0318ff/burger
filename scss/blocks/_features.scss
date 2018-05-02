@@ -1,7 +1,7 @@
 .features {
   background-image: url('../img/features-screen/bg.jpg');
   background-repeat: no-repeat;
-  background-position: center bottom;
+  background-position: center center;
   background-size: cover;
 
   display: flex;
@@ -23,6 +23,9 @@
     align-items: center;
     flex: 1;
     margin: 0 rem(15px);
+    padding-top: 15px;
+    // padding-right: 2px;
+    // padding-left: 2px;
     margin-bottom: rem(35px);
   }
 
@@ -36,13 +39,20 @@
   }
 
   .features__title {
-    font-size: rem(24px);
+    display: inline-block;
+    text-align: center;
+    // vertical-align: middle;
     font-family: "lifehack";
-    margin-bottom: rem(15px);
-   
+    font-weight: 500;
+    font-size: rem(24px);    
+    line-height: 1.25;
+    margin-bottom: rem(15px);   
+    
   }
 
 .features__text {
+    display: inline-block;
+    text-align: center;
     font-size: rem(14px);
     font-weight: 300;
     line-height: 1.8;

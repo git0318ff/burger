@@ -23,21 +23,21 @@
 .header__logo {
   margin-right: auto;
 }
+
 // антипаттерн
 .header__menu{
   display: flex;
   flex-wrap: nowrap;
-  
 }
 .menu {
     margin-right: rem(15px);
-  }
+ }
 .menu__list{
   margin: 0;
   padding: 0;
   display:flex;
 }  
-  .menu__item {
+.menu__item {
     position: relative;
     display: flex;
     align-items: center;
@@ -50,9 +50,9 @@
     &:last-child:after {
       display: none;
     }
-  }
+}
   
-  .menu__item-link {
+.menu__item-link {
     display: inline-block;
     padding: 3px 0;
 
@@ -64,13 +64,13 @@
     &:hover {
       text-decoration: underline;
     }
-  }
+}
 
-  .header__btn{
+.header__btn{
     
 display: flex;
 justify-content: flex-end;
-  }
+}
 
 .home__content {
   width: 100%;
@@ -78,11 +78,10 @@ justify-content: flex-end;
   flex-wrap: wrap;
   flex-grow: 1;
   align-items: center;
-  padding-bottom: 5%;
+  padding-bottom: 15%;
 }
 
 .content__img, .content__description {
-  // flex-basis: 50%;
   width: 50%;
   display: flex;
 }
@@ -91,6 +90,7 @@ justify-content: flex-end;
 .content__description {
   flex-direction: column;
   justify-content: center;
+  padding-top:5px;
 }
 
 
@@ -99,23 +99,25 @@ justify-content: flex-end;
   font-family: 'lifehack';
   font-size: rem(65px);
   font-weight: 500;
-  line-height: 1;
-  // @extend %test;
+  line-height: 0.9;
+  letter-spacing: -1px;
 }
-
+.home__next-page-pointer{
+  position: absolute;
+	top: 88%;
+	left: 47%;
+}
 .next-page-link {
   width: rem(50px);
   height: rem(50px);
   border: none; 
   background: url("../img/icons/arrow-scroll.svg") center center no-repeat;
-  
+
   cursor: pointer;
   transition: .5s; 
   display: inline-block;
 
   &:hover {
-    // background-color: $orange-dark;
-    background-color: darken($orange, 7%);
-
-}
+    transform: scale(1.2);
+  }
 }
