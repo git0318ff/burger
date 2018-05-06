@@ -79,7 +79,9 @@ justify-content: flex-end;
   width: 50%;
   display: flex;
 }
-
+.content__pic{
+  max-width: 100%;   //чтобы любая картинка нормально себя вела
+}
 
 .content__description {
   flex-direction: column;

@@ -52,6 +52,10 @@ body {
 body, html {
   height: 100%; }
 
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  font-weight: normal; }
+
 ul, li {
   margin: 0;
   padding: 0;
@@ -117,7 +121,11 @@ a {
   .screen__title.screen__title--black {
     color: #2f3234; }
 
+footer {
+  position: relative; }
+
 .order-link {
+  display: inline-block;
   min-width: 6.125rem;
   padding: 0.625rem 1rem;
   border-radius: 5px;
@@ -238,6 +246,9 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
+
+.content__pic {
+  max-width: 100%; }
 
 .content__description {
   -webkit-box-orient: vertical;

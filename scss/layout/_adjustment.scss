@@ -35,7 +35,12 @@
   }
 }
 
+
+footer{
+  position: relative;
+}
 .order-link {
+  display: inline-block;
   min-width: rem(98px);
   padding: rem(10px) rem(16px);
   border-radius: 5px;
