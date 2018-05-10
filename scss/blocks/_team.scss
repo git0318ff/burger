@@ -86,9 +86,17 @@
 }
 
 .team-acco__pic {
-  display: inline-block;
+  display: block;
   text-align: center;
+  width: rem(100px);
+  height: rem(100px);
   padding-top: 5px;
+  background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+  border-radius: 50%;
+  flex-shrink: 0;
+  // overflow: hidden;
 }
 
 .team-acco__img {

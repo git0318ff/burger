@@ -461,9 +461,17 @@ footer {
   overflow: hidden; }
 
 .team-acco__pic {
-  display: inline-block;
+  display: block;
   text-align: center;
-  padding-top: 5px; }
+  width: 6.25rem;
+  height: 6.25rem;
+  padding-top: 5px;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  -ms-flex-negative: 0;
+  flex-shrink: 0; }
 
 .team-acco__img {
   display: inline-block;
