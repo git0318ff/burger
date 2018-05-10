@@ -39,17 +39,26 @@
   font-weight: 400;
   color: $yellow;
   margin-bottom: rem(15px);
+  white-space: nowrap;
   
 
   @include phones() {
-    font-size: rem(63px);
+    font-size: rem(50px);
   }
 
-  @include small-phones {
-    font-size: rem(45px);
-  }
+  // @include small-phones {
+  //   font-size: rem(45px);
+  // }
   // line-height: 1.42;
 
+  &--first {
+    @include phones() {
+      font-size: rem(63px);
+    }
+  }
+&--wrap{
+  white-space: normal;
+}
   &.screen__title--black {
     color: $dark;
   }
@@ -80,9 +89,9 @@
 }
 
 
-footer{
-  position: relative;
-}
+// footer{
+//   position: relative;
+// }
 .order-link {
   display: inline-block;
   min-width: rem(98px);

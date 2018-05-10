@@ -125,13 +125,16 @@ a {
   font-family: 'gagalin';
   font-weight: 400;
   color: #f9b43b;
-  margin-bottom: 0.9375rem; }
+  margin-bottom: 0.9375rem;
+  white-space: nowrap; }
   @media (max-width: 480px) {
     .screen__title {
+      font-size: 3.125rem; } }
+  @media (max-width: 480px) {
+    .screen__title--first {
       font-size: 3.9375rem; } }
-  @media (max-width: 375px) {
-    .screen__title {
-      font-size: 2.8125rem; } }
+  .screen__title--wrap {
+    white-space: normal; }
   .screen__title.screen__title--black {
     color: #2f3234; }
   .screen__title--white {
@@ -146,9 +149,6 @@ a {
     position: absolute;
     top: 7rem;
     left: 5.625rem; }
-
-footer {
-  position: relative; }
 
 .order-link {
   display: inline-block;
