@@ -473,19 +473,6 @@ footer {
   -ms-flex-negative: 0;
   flex-shrink: 0; }
 
-.team-acco__img {
-  display: inline-block;
-  width: 6.25rem;
-  height: 6.25rem;
-  text-align: center;
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  border-radius: 50%;
-  overflow: hidden;
-  -o-object-fit: cover;
-  object-fit: cover; }
-
 .team-acco__desc {
   display: inline-block;
   margin-left: 1.25rem; }
