@@ -43,6 +43,10 @@
   @include phones() {
     font-size: rem(63px);
   }
+
+  @include small-phones {
+    font-size: rem(45px);
+  }
   // line-height: 1.42;
 
   &.screen__title--black {

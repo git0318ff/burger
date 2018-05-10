@@ -15,6 +15,9 @@
 
   .features__list {
     display: flex;
+    @include phones {
+      flex-direction: column;
+    }
   }
 
   .features__item {
@@ -27,6 +30,12 @@
     // padding-right: 2px;
     // padding-left: 2px;
     margin-bottom: rem(35px);
+
+    @include phones {
+      flex-direction: row;
+      margin-bottom: rem(45px);
+    }
+
   }
 
   .features__img {
@@ -38,6 +47,13 @@
     height: rem(89px);
   }
 
+  .features__desc {
+
+    @include phones {
+      text-align: left;
+      margin-left: rem(30px);
+    }
+  }
   .features__title {
     display: inline-block;
     text-align: center;
