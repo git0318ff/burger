@@ -111,6 +111,14 @@ a {
   -ms-flex-direction: column;
   flex-direction: column;
   position: relative; }
+  @media (max-width: 768px) {
+    .container {
+      max-width: 45rem;
+      width: 95%; } }
+  @media (max-width: 480px) {
+    .container {
+      max-width: 28.75rem;
+      width: 95%; } }
 
 .screen__title {
   font-size: 4.5rem;
@@ -118,6 +126,9 @@ a {
   font-weight: 400;
   color: #f9b43b;
   margin-bottom: 0.9375rem; }
+  @media (max-width: 480px) {
+    .screen__title {
+      font-size: 3.9375rem; } }
   .screen__title.screen__title--black {
     color: #2f3234; }
   .screen__title--white {
@@ -260,6 +271,36 @@ footer {
   -webkit-box-pack: end;
   -ms-flex-pack: end;
   justify-content: flex-end; }
+  @media (max-width: 768px) {
+    .header__btn {
+      margin-right: 1.4375rem; } }
+
+.hamburger {
+  height: 23px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  cursor: pointer;
+  overflow: hidden;
+  width: 0; }
+  @media (max-width: 768px) {
+    .hamburger {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      width: 23px; } }
+
+.hamburger__item {
+  width: 100%;
+  height: 4px;
+  background: white;
+  border-radius: 3px; }
 
 .home__content {
   width: 100%;
@@ -324,6 +365,9 @@ footer {
   font-weight: 500;
   line-height: 0.9;
   letter-spacing: -1px; }
+  @media (max-width: 480px) {
+    .content__description-text {
+      font-size: 3.375rem; } }
 
 .home__next-page-pointer {
   position: absolute;
@@ -456,7 +500,8 @@ footer {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  margin-bottom: 0.625rem; }
+  margin-bottom: 0.625rem;
+  cursor: pointer; }
   @media (max-width: 768px) {
     .team-acco__trigger {
       font-size: 1.5rem; } }
@@ -583,9 +628,11 @@ footer {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+  cursor: pointer;
   position: relative; }
 
 .menu-acco__trigger-text {
+  white-space: nowrap;
   font-family: "gagalin",Arial, Helvetica, sans-serif;
   font-weight: 400;
   font-size: 2.5rem;
@@ -593,7 +640,6 @@ footer {
   -webkit-transform: rotate(-90deg);
   -ms-transform: rotate(-90deg);
   transform: rotate(-90deg);
-  white-space: nowrap;
   margin-bottom: 12.5rem; }
 
 .menu-acco__content {
@@ -1014,31 +1060,5 @@ footer {
   width: 1rem;
   height: 1rem;
   opacity: 1; }
-
-.nav-mobile {
-  display: none;
-  position: fixed;
-  top: 2.5625rem;
-  right: 1.75rem;
-  z-index: 999; }
-  @media (max-width: 768px) {
-    .nav-mobile {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex; } }
-  .nav-mobile__link, .nav-mobile__link::before, .nav-mobile__link::after {
-    display: block;
-    height: 4px;
-    width: 25px;
-    border-radius: 3px;
-    background-color: #fff; }
-  .nav-mobile__link::after, .nav-mobile__link::before {
-    content: '';
-    display: block;
-    position: absolute; }
-  .nav-mobile__link::before {
-    top: -0.625rem; }
-  .nav-mobile__link::after {
-    top: 0.625rem; }
 
 /*# sourceMappingURL=main.css.map */

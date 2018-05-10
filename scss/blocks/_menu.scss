@@ -35,18 +35,20 @@
     display: flex;
     align-items: flex-end;
     justify-content: center;
+    cursor: pointer;
     
   position: relative;
 }
 
 .menu-acco__trigger-text{
+    white-space: nowrap;
     font-family: "gagalin",Arial, Helvetica, sans-serif;
     font-weight: 400;
     font-size: rem(40px);
     text-transform: uppercase;
     transform: rotate(-90deg);
-    white-space: nowrap;
     margin-bottom: rem(200px);
+
 }
 
 

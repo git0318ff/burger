@@ -20,6 +20,17 @@
   align-items: center;
   flex-direction: column;
   position: relative; 
+
+	@include tablets() {
+    max-width: rem(720px);
+    width: 95%;
+  }
+
+  @include phones() {
+    max-width: rem(460px);
+    width: 95%;
+  }
+
 }
 
 .screen__title {
@@ -28,6 +39,10 @@
   font-weight: 400;
   color: $yellow;
   margin-bottom: rem(15px);
+
+  @include phones() {
+    font-size: rem(63px);
+  }
   // line-height: 1.42;
 
   &.screen__title--black {
