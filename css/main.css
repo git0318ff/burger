@@ -732,6 +732,10 @@ footer {
   .reviews__item:hover .reviews__content {
     opacity: 1;
     background-color: rgba(20, 20, 20, 0.7); }
+  @media (max-width: 768px) {
+    .reviews__item {
+      width: 50%;
+      height: 25%; } }
 
 .reviews__avatar {
   width: 100%;
@@ -769,6 +773,11 @@ footer {
   -webkit-transition: .5s;
   -o-transition: .5s;
   transition: .5s; }
+  @media (max-width: 768px) {
+    .reviews__content {
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; } }
 
 .reviews__name {
   font-family: "gagalin", cursive;
@@ -776,10 +785,17 @@ footer {
   font-style: normal;
   text-transform: uppercase;
   margin-bottom: 1.9375rem; }
+  @media (max-width: 480px) {
+    .reviews__name {
+      font-size: 1.5rem;
+      text-align: center; } }
 
 .reviews__text {
   line-height: 1.7;
   margin-bottom: 1rem; }
+  @media (max-width: 480px) {
+    .reviews__text {
+      display: none; } }
 
 .reviews__btn {
   width: 6.875rem;
@@ -795,6 +811,15 @@ footer {
   transition: 0.5s;
   outline: none;
   background-color: #2f3234; }
+  @media (max-width: 768px) {
+    .reviews__btn {
+      -ms-flex-item-align: center;
+      align-self: center; } }
+  @media (max-width: 480px) {
+    .reviews__btn {
+      -ms-flex-item-align: center;
+      align-self: center;
+      text-align: center; } }
   .reviews__btn:hover {
     background-color: #1e2021; }
 
