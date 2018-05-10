@@ -2,6 +2,13 @@
     position: fixed;
     top: 15%;
     right: 5%;
+    @include tablets() {
+        display: none;
+      }
+    
+      @include phones() {
+        display: none;
+      }
 }
 .points-menu__item{
     margin-bottom: rem(5px);

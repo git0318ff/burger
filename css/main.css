@@ -1016,6 +1016,12 @@ footer {
   position: fixed;
   top: 15%;
   right: 5%; }
+  @media (max-width: 768px) {
+    .points-menu {
+      display: none; } }
+  @media (max-width: 480px) {
+    .points-menu {
+      display: none; } }
 
 .points-menu__item {
   margin-bottom: 0.3125rem; }
