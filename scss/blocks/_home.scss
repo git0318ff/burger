@@ -13,6 +13,10 @@
   justify-content: space-between;
   align-items: center;
   padding-top: 10px;
+
+  @include tablets {
+		align-items: center;
+	}
 }
 
 .header__logo {
@@ -26,10 +30,16 @@
   margin-right: rem(15px);
 }
 
+
 .nav__list{
   margin: 0;
   padding: 0;
   display:flex;
+  
+  @include tablets {
+    display: none;  
+  }
+
 }  
 .nav__item {
     position: relative;
@@ -66,26 +76,31 @@ display: flex;
 justify-content: flex-end;
 }
 
+
 .home__content {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   flex-grow: 1;
   align-items: center;
+  justify-content: center;
   padding-bottom: 15%;
 
-  // @include tablets {
-  //   flex-direction: column;
-  //   align-items: center;
-  //   text-align: center;
-  //   padding: 0 20%;
-  // }
+
 }
 
 .content__img, .content__description {
   width: 50%;
   display: flex;
+
+  @include tablets {
+    flex-direction: column;
+    padding: 0;
+    width: auto;  
+  }
 }
+
+
 .content__pic{
   max-width: 100%;   //чтобы любая картинка нормально себя вела
 }
@@ -94,6 +109,13 @@ justify-content: flex-end;
   flex-direction: column;
   justify-content: center;
   padding-top:5px;
+
+  @include tablets {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 20%;
+  }
 }
 
 
@@ -104,6 +126,8 @@ justify-content: flex-end;
   font-weight: 500;
   line-height: 0.9;
   letter-spacing: -1px;
+
+
 }
 .home__next-page-pointer{
   position: absolute;

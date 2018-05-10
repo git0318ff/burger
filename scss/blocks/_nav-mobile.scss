@@ -1,0 +1,39 @@
+.nav-mobile {
+    display: none;
+    position: fixed;
+    top: rem(41px);
+    right: rem(28px);
+    z-index: 999;
+  
+    @include tablets {
+      display: flex;  
+    }
+  
+    &__link {
+  
+      &,
+      &::before,
+      &::after {
+        display: block;
+        height: 4px;
+        width: 25px;
+        border-radius: 3px;
+        background-color: $white;
+      }
+  
+      &::after,
+      &::before {
+        content: '';
+        display: block;
+        position: absolute;
+      }
+  
+      &::before {
+        top: rem(-10px);
+      }
+  
+      &::after {
+        top: rem(10px);
+      }
+    }
+  }
