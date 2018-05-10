@@ -26,12 +26,12 @@
   margin-right: rem(15px);
 }
 
-.menu__list{
+.nav__list{
   margin: 0;
   padding: 0;
   display:flex;
 }  
-.menu__item {
+.nav__item {
     position: relative;
     display: flex;
     align-items: center;
@@ -46,7 +46,7 @@
     }
 }
   
-.menu__item-link {
+.nav__item-link {
     display: inline-block;
     padding: 3px 0;
 
@@ -73,6 +73,13 @@ justify-content: flex-end;
   flex-grow: 1;
   align-items: center;
   padding-bottom: 15%;
+
+  // @include tablets {
+  //   flex-direction: column;
+  //   align-items: center;
+  //   text-align: center;
+  //   padding: 0 20%;
+  // }
 }
 
 .content__img, .content__description {

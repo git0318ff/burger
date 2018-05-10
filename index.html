@@ -38,14 +38,14 @@
                     </a>
                 </div>
                 <div class="header__menu">
-                    <nav class="menu">
-                        <ul class="menu__list">
-                            <li class="menu__item "><a href="#" class="menu__item-link ">о нас</a></li>
-                            <li class="menu__item "><a href="#" class="menu__item-link ">бургеры</a></li>
-                            <li class="menu__item "><a href="#" class="menu__item-link ">команда</a></li>
-                            <li class="menu__item "><a href="#" class="menu__item-link ">меню</a></li>
-                            <li class="menu__item "><a href="#" class="menu__item-link ">отзывы</a></li>
-                            <li class="menu__item "><a href="#" class="menu__item-link ">контакты</a></li>
+                    <nav class="nav">
+                        <ul class="nav__list">
+                            <li class="nav__item "><a href="#" class="nav__item-link ">о нас</a></li>
+                            <li class="nav__item "><a href="#" class="nav__item-link ">бургеры</a></li>
+                            <li class="nav__item "><a href="#" class="nav__item-link ">команда</a></li>
+                            <li class="nav__item "><a href="#" class="nav__item-link ">меню</a></li>
+                            <li class="nav__item "><a href="#" class="nav__item-link ">отзывы</a></li>
+                            <li class="nav__item "><a href="#" class="nav__item-link ">контакты</a></li>
                         </ul>
                     </nav>              
                 </div>
@@ -109,13 +109,13 @@
     <section class="screen team">
 
         <div class="team__container">
-            <h2 class="screen__title">Команда</h2>
+            <h2 class="screen__title screen__title--left-down">Команда</h2>
             <ul class="team-acco">
                 <li class="team-acco__item">
                     <a href="#" class="team-acco__trigger">Дэниэл Редклиф</a>
                     <div class="team-acco__content">
-                        <div class="team-acco__avatar">
-                            <img src="images/content/photo-team/1.jpg" class="team-acco__pic" alt="Дэниэл Редклиф">
+                        <div class="team-acco__pic">
+                            <img src="../img/team-screen/teammate1.jpg" class="team-acco__img" alt="Дэниэл Редклиф">
                         </div>
                         <div class="team-acco__desc">
                             <h5 class="team-acco__desc-title">Оператор</h5>
@@ -127,11 +127,11 @@
                         </div>
                     </div>
                 </li>
-                <li class="team-acco__item">
+                <li class="team-acco__item team-acco__item--active">
                     <a href="#" class="team-acco__trigger">Ричард Джеймс</a>
                     <div class="team-acco__content">
-                        <div class="team-acco__avatar">
-                            <img src="images/content/photo-team/1.jpg" class="team-acco__pic" alt="Ричард Джеймс">
+                        <div class="team-acco__pic">
+                            <img src="../img/team-screen/teammate1.jpg" class="team-acco__img" alt="Ричард Джеймс">
                         </div>
                         <div class="team-acco__desc">
                             <h5 class="team-acco__desc-title">Оператор</h5>
@@ -146,8 +146,8 @@
                 <li class="team-acco__item">
                     <a href="#" class="team-acco__trigger">Джейк Финн</a>
                     <div class="team-acco__content">
-                        <div class="team-acco__avatar">
-                            <img src="images/content/photo-team/1.jpg" class="team-acco__pic" alt="Джейк Финн">
+                        <div class="team-acco__pic">
+                            <img src="../img/team-screen/teammate1.jpg" class="team-acco__img" alt="Джейк Финн">
                         </div>
                         <div class="team-acco__desc">
                             <h5 class="team-acco__desc-title">Оператор</h5>
@@ -162,8 +162,8 @@
                 <li class="team-acco__item">
                     <a href="#" class="team-acco__trigger">Николай Иванов</a>
                     <div class="team-acco__content">
-                        <div class="team-acco__avatar">
-                            <img src="images/content/photo-team/1.jpg" class="team-acco__pic" alt="Николай Иванов">
+                        <div class="team-acco__pic">
+                            <img src="../img/team-screen/teammate1.jpg" class="team-acco__img" alt="Николай Иванов">
                         </div>
                         <div class="team-acco__desc">
                             <h5 class="team-acco__desc-title">Оператор</h5>
@@ -181,10 +181,10 @@
     
     <section class="screen menu">
 
-        <h2 class="screen__title screen__title--white ">Меню</h2>
+        <h2 class="screen__title screen__title--white screen__title--left-top ">Меню</h2>
         <ul class="menu-acco">
-            <li class="menu-acco__item is-active">
-                <a href="#" class="menu-acco__trigger" style="background-image: url(images/bg/menu-bg--1.jpg);">
+            <li class="menu-acco__item menu-acco__item--active">
+                <a href="#" class="menu-acco__trigger" style="background-image: url('img/menu-screen/bg-meat.jpg')">
                     <div class="menu-acco__trigger-text">Для мясоедов
                     </div>
                 </a>
@@ -195,7 +195,7 @@
                 </div>
             </li>
             <li class="menu-acco__item">
-                <a href="#" class="menu-acco__trigger" style="background-image: url(images/bg/menu-bg--2.jpg);">
+                <a href="#" class="menu-acco__trigger" style="background-image:url('img/menu-screen/bg-veget.jpg')">
                     <div class="menu-acco__trigger-text">Вегетарианское
                     </div>
                 </a>
@@ -206,7 +206,7 @@
                 </div>
             </li>
             <li class="menu-acco__item">
-                <a href="#" class="menu-acco__trigger" style="background-image: url(images/bg/menu-bg--3.jpg);">
+                <a href="#" class="menu-acco__trigger" style="background-image: url('img/menu-screen/bg-diet.jpg')">
                     <div class="menu-acco__trigger-text">Диетическое
                     </div>
                 </a>
@@ -368,7 +368,7 @@
                     <div class="form__row">
                         <label class="form__block">
                             <div class="form__block-title">Комментарий</div>
-                            <textarea name="comment" class="form__input form__input--textarea"></textarea>
+                            <textarea name="comment" class="form__input form__input--textarea" cols="30" rows="10" required ></textarea>
                         </label>
                     </div>
                     <div class="form__buttons">
@@ -376,7 +376,7 @@
                             <label class="form__radio">
                                 <input class="form__radio-input" type="radio" name="payment">
                                 <div class="form__radio-fake"></div>
-                                <div class="form__block-title form__block-title--buttons">Потребуется здача</div>
+                                <div class="form__block-title form__block-title--buttons">Потребуется сдача</div>
                             </label>
                             <label class="form__radio">
                                 <input class="form__radio-input" type="radio" name="payment" checked>
@@ -392,8 +392,8 @@
                             </label>
                         </div>
                         <div class="form__row">
-                            <button type="submit" class="form__btn" value="">Заказать</button>
-                            <button type="reset" class="form__btn--reset" value="">Очистить</button>
+                            <button type="submit" class="btn" value="">Заказать</button>
+                            <button type="reset" class="btn btn--reset" value="">Очистить</button>
                         </div>
                     </div>
                 </div>
@@ -402,8 +402,9 @@
         </div>
     </section>
 
-    <section class="section map">
-        <div class="yandex-map" id="map">
+    <section class="screen map">
+        <h2 class="screen__title visuallhydden1">Контакты</h2>
+        <div class="yandex-map" >
         </div>
 
         <footer class="footer">
@@ -418,28 +419,28 @@
                         <li class="socials__item">
                             <a class="socials__link" href="#">
                                 <svg class="socials__link-icon" style="fill: #fff">
-                                    <use xlink:href="./img/sprite/sprite.svg#vk"></use>
+                                    <use xlink:href="img/sprite/sprite.svg#vk"></use>
                                 </svg>
                             </a>
                         </li>
                         <li class="socials__item">
                             <a class="socials__link" href="#">
                                 <svg class="socials__link-icon" style="fill: #fff">
-                                    <use xlink:href="./img/sprite/sprite.svg#fb"></use>
+                                    <use xlink:href="img/sprite/sprite.svg#fb"></use>
                                 </svg>
                             </a>
                         </li>
                         <li class="socials__item">
                             <a class="socials__link" href="#">
                                 <svg class="socials__link-icon" style="fill: #fff">
-                                    <use xlink:href="./img/sprite/sprite.svg#inst"></use>
+                                    <use xlink:href="img/sprite/sprite.svg#inst"></use>
                                 </svg>
                             </a>
                         </li>
                         <li class="socials__item">
                             <a class="socials__link" href="#">
                                 <svg class="socials__link-icon" style="fill: #fff">
-                                    <use xlink:href="./img/sprite/sprite.svg#twitter"></use>
+                                    <use xlink:href="img/sprite/sprite.svg#twitter"></use>
                                 </svg>
                             </a>
                         </li>

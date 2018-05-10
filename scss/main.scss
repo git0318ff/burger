@@ -1,3 +1,11 @@
+// resolutions
+$desktop: 1200px;
+$laptop: 992px;
+$tablets: 768px;
+$phones: 480px;
+
+
+
 //config
 
 @import "config/_variables.scss";
@@ -10,9 +18,16 @@
 
 // blocks
 @import "blocks/_home.scss";
-// @import "blocks/header.scss";
 @import "blocks/_features.scss";
+@import "blocks/_team.scss";
+@import "blocks/_menu.scss";
 @import "blocks/_reviews.scss";
+@import "blocks/_order.scss";
+
+
+@import "blocks/_map.scss";
+@import "blocks/_footer.scss";
+
 @import "blocks/_points-menu.scss";
 
 

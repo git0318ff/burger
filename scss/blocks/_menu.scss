@@ -1,0 +1,94 @@
+.menu {
+    background-image: url('../img/menu-screen/bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 100%;
+	
+	overflow: hidden;
+}
+
+.menu-acco {
+	position: absolute;
+	right: 0;
+	top: 0;
+	bottom: 0;
+    // width: 70%;    
+    
+    display: flex;
+   justify-content: flex-end;	
+}
+
+.menu-acco__item {
+    height: 100%;
+    
+	display: flex;
+    justify-content: flex-end;
+}
+
+.menu-acco__trigger {
+	width: rem(80px);
+
+	height: 100%;
+	float: left;
+	@include cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    
+  position: relative;
+}
+
+.menu-acco__trigger-text{
+    font-family: "gagalin",Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: rem(40px);
+    text-transform: uppercase;
+    transform: rotate(-90deg);
+    white-space: nowrap;
+    margin-bottom: rem(200px);
+}
+
+
+.menu-acco__content {
+	height: 100%;
+	float: left;
+	background: rgba(#2f3234, .93);
+	width: 0;
+    overflow: hidden;
+    padding: 10% 0;
+}
+
+.menu-acco__text {
+    font-family: 'ubuntu',Arial, Helvetica, sans-serif;
+    font-weight: 300;
+	font-size: rem(14px);
+	color: #fff;
+	padding: rem(60px) rem(32px);
+    line-height: 1.8;
+    display: none;
+}
+
+
+.menu-acco__item--active {
+
+      .menu-acco__trigger-text  {
+        color: $yellow;
+      }
+  
+      .menu-acco__content {
+        width: rem(540px);
+
+        .menu-acco__text{
+            display: inline-block;
+        }
+        @include tablets {
+          width: rem(340px);
+        }
+  
+        @include phones {
+          width: rem(220px);
+        }
+      }
+    
+  }
